@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <h1 id="heading" onclick="headingListener();">
+      Session 5 / DOM Manipulation
+    </h1>
+
+    <p class="paragraph" onmouseover="paraHover()">Lorem <b>ipsum</b></p>
+
+    <button id="listAdderBtn">Click me</button>
+
+    <label for="comments">Comments:</label>
+      <textarea name="commentBox" id="comments"></textarea>
+
+    <ul class="number-list">
+      <li class="item">One</li>
+      <li class="item">Two</li>
+    </ul>
+
+    <div>
+      <img
+        data-custom-image-name="myFancyImage"
+        src="https://images.unsplash.com/photo-1621609764095-b32bbe35cf3a?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80"
+        alt="" />
+    </div>
+
+    <script src="dom.js"></script>
+  </body>
+</html>
