@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(33, 11, 106);
+  color: rgb(240, 188, 64);
+  text-align: center;
+}
+
+.icon {
+  width: min(30%, 300px);
+  cursor: pointer;
+}
+
+.result {
+  font-size: 3.5rem;
+}
+
+.score-container {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  font-size: 2rem;
+}
