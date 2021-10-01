@@ -4,7 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="styles.css" rel="stylesheet" />
     <title>Rock Paper Scissors</title>
   </head>
-  <body></body>
+  <body>
+    <div id="icon-container" class="icon-container">
+      <img src="rock.jpg" alt="rock icon" id="rock-icon" class="icon" />
+      <img src="paper.jpg" alt="paper icon" id="paper-icon" class="icon" />
+      <img src="scissors.jpg" alt="scissors icon" id="scissors-icon" class="icon" />
+    </div>
+
+    <div id="result-container" class="result-container">
+      <h2 id="result" class="result">Click an icon to play</h2>
+    </div>
+
+    <div id="score-container" class="score-container">
+      <div id="player-column" class="column">
+        <h3 class="score-display">Player: 
+          <span id="player-score">0</span>
+        </h3>
+        <p id="player-choice"></p>
+      </div>
+      <div id="computer-column" class="column">
+        <h3 class="score-display">Computer: 
+          <span id="computer-score">0</span>
+        </h3>
+        <p id="computer-choice"></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
