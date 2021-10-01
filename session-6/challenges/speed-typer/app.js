@@ -14,7 +14,7 @@ const words = [
 ];
 
 // Time left to play
-let time = 6;
+let time = 0;
 // Keeps track of score
 let score = 0;
 // Determines if user playing or not
@@ -48,7 +48,7 @@ const initialise = () => {
 const countDownTimer = () => {
   if (time > 0) {
     time--;
-  } else if (time === 0) {
+  } else {
     isPlayingGame = false;
   }
 
@@ -57,6 +57,7 @@ const countDownTimer = () => {
 
 const checkGameStatus = () => {
   if (!isPlayingGame && time === 0) {
+    // TODO stop this from overwriting "" when starting new game
     message.innerHTML = "Game Over";
     score = -1;
   }
