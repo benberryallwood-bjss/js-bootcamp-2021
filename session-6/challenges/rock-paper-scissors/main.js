@@ -1,51 +1,53 @@
+// DOM Selectors
+const rockIcon = document.getElementById("rock-icon");
+const paperIcon = document.getElementById("paper-icon");
+const scissorsIcon = document.getElementById("scissors-icon");
+const resultDisplay = document.getElementById("result");
+const playerScore = document.getElementById("player-score");
+const computerScore = document.getElementById("computer-score");
+const playerChoiceDisplay = document.getElementById("player-choice");
+const computerChoiceDisplay = document.getElementById("computer-choice");
+
 const options = ["rock", "paper", "scissors"];
+const results = ["It's a draw", "Computer wins", "Player wins"];
 
-let computerChoice;
-const computerChoiceSelector = () => {
-  let num = Math.random();
+// Pick random index (0 to 2)
+const computerIndexSelector = () => Math.floor(Math.random() * 3);
 
-  if (0 <= num < 0.33) {
-    computerChoice = "rock";
-  } else if (0.33 <= num < 0.66) {
-    computerChoice = "paper";
-  } else {
-    computerChoice = "scissors";
+// Calculate the result
+const calculateResult = (playerIndex, computerIndex) => {
+  return results[(computerIndex - playerIndex + 3) % 3];
+};
+
+// Update scores
+const updateScores = (result) => {
+  if (result.includes("Computer")) {
+    computerScore.innerText = parseInt(computerScore.innerText) + 1;
+  } else if (result.includes("Player")) {
+    playerScore.innerText = parseInt(playerScore.innerText) + 1;
   }
 };
 
-const calcOutcome = () => {
-  let playerIndex = options.indexOf(playerChoice);
-  let computerIndex = options.indexOf(computerChoice);
-
-  if (playerIndex === computerIndex) {
-    return "Result: draw";
-  } else if (
-    computerIndex - playerIndex === 1 ||
-    playerIndex - computerIndex === 2
-  ) {
-    return "Result: computer wins";
-  } else if (
-    computerIndex - playerIndex === 2 ||
-    playerIndex - computerIndex === 1
-  ) {
-    return "Result: player wins";
-  }
+// Play game
+const playGame = (playerIndex) => {
+  // Make choice for computer
+  let computerIndex = computerIndexSelector();
+  // Display the choices under the scores
+  playerChoiceDisplay.innerText = options[playerIndex];
+  computerChoiceDisplay.innerText = options[computerIndex];
+  // Calculate and display result
+  let result = calculateResult(playerIndex, computerIndex);
+  resultDisplay.innerText = result;
+  updateScores(result);
 };
 
-const playerSelection = document.getElementById("playerSelection");
-let playerChoice;
-
-const choices = document.getElementById("choices");
-const outcome = document.getElementById("outcome");
-
-playerSelection.addEventListener("change", function (event) {
-  const selectedValue = event.target.value;
-
-  if (selectedValue !== "-1") {
-    playerChoice = selectedValue.toLowerCase();
-    // play game
-    computerChoiceSelector();
-    choices.innerText = `Player choice: ${playerChoice}, Computer choice: ${computerChoice}`;
-    outcome.innerText = calcOutcome();
-  }
+// Event listeners for icons
+rockIcon.addEventListener("click", () => {
+  playGame(0);
+});
+paperIcon.addEventListener("click", () => {
+  playGame(1);
+});
+scissorsIcon.addEventListener("click", () => {
+  playGame(2);
 });
