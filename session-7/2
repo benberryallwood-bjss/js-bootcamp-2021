@@ -1,0 +1,14 @@
+console.log("hello");
+import { getCourierByKey } from "./courier-utils.js";
+
+console.log("hello");
+
+const transactionDetails = {
+  courier: "DHL",
+  product: { name: "Jeans", price: 23.99 },
+  customerId: 1,
+};
+
+const courierAddress = getCourierByKey(transactionDetails.courier);
+
+console.log(courierAddress);
