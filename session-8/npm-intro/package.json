@@ -1,0 +1,17 @@
+{
+  "name": "npm-intro",
+  "version": "1.0.0",
+  "description": "A simple npm demo",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben B-A",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
