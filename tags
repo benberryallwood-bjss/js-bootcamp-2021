@@ -1,0 +1,35 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+addFive	session-4/functions.js	/^function addFive(num) {$/;"	f
+const	session-4/functions.js	/^const sayOtherMessage = function () {$/;"	f
+const.address	session-2/main.js	/^  address: {$/;"	p
+const.address	session-3/main.js	/^  address: {$/;"	p
+const.age	session-2/main.js	/^  age: 23,$/;"	p
+const.age	session-4/main.js	/^  age: 23,$/;"	p
+const.artist	session-3/main.js	/^  artist: "Adele",$/;"	p
+const.date	session-2/main.js	/^  date: new Date(),$/;"	p
+const.dimensions	session-3/main.js	/^  dimensions: [$/;"	p
+const.lions	session-4/main.js	/^  lions: ["leo"],$/;"	p
+const.manufacturer	session-2/main.js	/^  manufacturer: "Ford",$/;"	p
+const.manufacturer	session-2/main.js	/^  manufacturer: "Sony",$/;"	p
+const.model	session-2/main.js	/^  model: "Fiesta",$/;"	p
+const.name	session-2/main.js	/^  name: "Heater",$/;"	p
+const.name	session-2/main.js	/^  name: "Matt Sam",$/;"	p
+const.name	session-3/main.js	/^  name: "Samsung TV",$/;"	p
+const.name	session-4/main.js	/^  name: "Jill Smith",$/;"	p
+const.personName	session-3/main.js	/^  personName: "John",$/;"	p
+const.price	session-2/main.js	/^  price: 99.99,$/;"	p
+const.saleItem	session-3/main.js	/^  saleItem: false,$/;"	p
+const.songs	session-3/main.js	/^  songs: [$/;"	p
+const.title	session-3/main.js	/^  title: "21",$/;"	p
+const.toppings	session-5/main.js	/^  toppings: ["vanilla"],$/;"	p
+const.year	session-3/main.js	/^  year: 2000,$/;"	p
+country	session-2/main.js	/^var country; \/\/ just declared$/;"	v
+debitAccount	session-5/main.js	/^function debitAccount(account, amount) {$/;"	f
+myName	session-2/main.js	/^var myName = 8; \/\/ initialised$/;"	v
+sayMessage	session-4/functions.js	/^function sayMessage() {$/;"	f
+validateComments	session-5/dom.js	/^function validateComments(event) {$/;"	f
