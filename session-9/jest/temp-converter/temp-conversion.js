@@ -23,7 +23,7 @@ export const kelToFahr = (arg) => {
     throw new Error("Input must be a number");
   }
 
-  const result;
+  const result = (arg - 273.15) * 1.8 + 32;
 
   return result;
 };
@@ -33,7 +33,7 @@ export const fahrToKel = (arg) => {
     throw new Error("Input must be a number");
   }
 
-  const result;
+  const result = (arg - 32) / 1.8 + 273.15;
 
   return result;
 };
@@ -43,7 +43,7 @@ export const kelToCel = (arg) => {
     throw new Error("Input must be a number");
   }
 
-  const result;
+  const result = arg - 273.15;
 
   return result;
 };
@@ -53,7 +53,7 @@ export const celToKel = (arg) => {
     throw new Error("Input must be a number");
   }
 
-  const result;
+  const result = arg + 273.15;
 
   return result;
 };
