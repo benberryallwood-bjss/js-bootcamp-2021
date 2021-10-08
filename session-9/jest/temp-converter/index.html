@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+
+    <div class="temp-converter">
+      <input type="text" id="temp-input" class="input-field" placeholder="Enter temperature" />
+
+      <label for="start-unit">Select start unit:</label>
+      <select name="start-unit" id="start-unit-input" class="input-field">
+        <option value="cel">C</option>
+        <option value="fahr">F</option>
+        <option value="kel">K</option>
+      </select>
+
+      <label for="desired-unit">Select desired unit:</label>
+      <select name="desired-unit" id="desired-unit-input" class="input-field">
+        <option value="Cel">C</option>
+        <option value="Fahr">F</option>
+        <option value="Kel">K</option>
+      </select>
+
+      <div id="temp-output"></div>
+    </div>
+
+    <script src="temp-conversion.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
+
