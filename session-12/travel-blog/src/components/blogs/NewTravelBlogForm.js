@@ -3,9 +3,6 @@ import { useRef } from "react";
 import Card from "../ui/Card";
 import classes from "./NewTravelBlogForm.module.css";
 
-// database url
-// https://react-travel-blog-69dde-default-rtdb.firebaseio.com/
-
 const NewTravelBlogForm = ({ onAddTravelBlog }) => {
   const titleInputRef = useRef();
   const imageInputRef = useRef();
