@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router-dom";
+import Layout from "./components/layout/Layout";
 import MainNavigation from "./components/layout/MainNavigation";
 
 // bring in pages
@@ -8,9 +9,7 @@ import NewTravelBlog from "./pages/NewTravelBlog";
 
 const App = () => {
   return (
-    <div>
-      <MainNavigation />
-
+    <Layout>
       <Switch>
         <Route path="/" exact>
           <AllTravelBlogs />
@@ -22,7 +21,7 @@ const App = () => {
           <BucketList />
         </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 };
 
