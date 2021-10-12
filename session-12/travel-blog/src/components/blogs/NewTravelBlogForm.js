@@ -6,7 +6,7 @@ import classes from "./NewTravelBlogForm.module.css";
 // database url
 // https://react-travel-blog-69dde-default-rtdb.firebaseio.com/
 
-const NewTravelBlogForm = () => {
+const NewTravelBlogForm = ({ onAddTravelBlog }) => {
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();
@@ -32,6 +32,8 @@ const NewTravelBlogForm = () => {
     };
 
     console.log(newTravelBlog);
+
+    onAddTravelBlog(newTravelBlog);
   };
 
   return (
