@@ -1,4 +1,5 @@
 import React from "react";
+import TravelBlogList from "../components/blogs/TravelBlogList";
 
 const BLOG_DATA = [
   {
@@ -21,18 +22,13 @@ const BLOG_DATA = [
   },
 ];
 
-function AllTravelBlogs() {
+const AllTravelBlogs = () => {
   return (
     <section>
       <h1>All Travel Blogs</h1>
-
-      <ul>
-        {BLOG_DATA.map((travelBlog) => {
-          return <li key={travelBlog.id}>{travelBlog.title}</li>;
-        })}
-      </ul>
+      <TravelBlogList blogs={BLOG_DATA} />
     </section>
   );
-}
+};
 
 export default AllTravelBlogs;

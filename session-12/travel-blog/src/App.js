@@ -6,7 +6,7 @@ import AllTravelBlogs from "./pages/AllTravelBlogs";
 import BucketList from "./pages/BucketList";
 import NewTravelBlog from "./pages/NewTravelBlog";
 
-function App() {
+const App = () => {
   return (
     <div>
       <MainNavigation />
@@ -24,6 +24,6 @@ function App() {
       </Switch>
     </div>
   );
-}
+};
 
 export default App;
