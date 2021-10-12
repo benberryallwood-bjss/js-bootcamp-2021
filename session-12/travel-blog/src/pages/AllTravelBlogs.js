@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import TravelBlogList from "../components/blogs/TravelBlogList";
 
 const BLOG_DATA = [
